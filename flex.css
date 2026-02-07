@@ -1,9 +1,11 @@
 body {
     background-color: #fffacd;
+    padding-top: 60px;
+    margin: 0;
 }
 
 a {
-    color: #fffacd;
+    color: #f9f3bc;
     text-decoration: none;
     /*font-weight: bold;*/
 }
@@ -12,11 +14,30 @@ a:hover{
     color: #e7ebee;
 }
 
+.home img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-container img {
+    max-width: 300px;
+    height: auto;
+}
+
 .flex-container {
     display: flex;
-    border-style: solid;
+    /*border-style: solid;
     border-width: 5px;
-    border-color: red;
+    border-color: blue;*/
     flex-direction: row;
 }
 
