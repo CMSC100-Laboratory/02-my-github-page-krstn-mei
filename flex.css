@@ -18,6 +18,12 @@ a:hover{
     color: #e7ebee;
 }
 
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home img {
     max-width: 100%;
     height: auto;
@@ -205,9 +211,6 @@ p + p {
 .flex-container {
     display: flex;
     justify-content: flex-end;
-    /*border-style: solid;
-    border-width: 5px;
-    border-color: blue;*/
     flex-direction: row;
 }
 
@@ -232,8 +235,89 @@ ul {
     list-style-position: inside;
 }
 
+.project-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  margin: 30px 0;
+  
+  display: flex;
+  flex-direction: row;
+  
+  transition: all 200ms ease-in-out;
+}
+
+.image-wrapper {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.wrapper img {
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+  transition: all 200ms ease-in-out;
+}
+
+.book-design-image {
+  object-position: center;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  max-height: 300px;
+  left: 380px;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+  
+}
+
+h1 {
+  position: relative;
+  bottom: 0;
+  height: 300px;
+  color: #f9f3bc;
+  text-shadow:
+    -1px -1px 0 #927da1,
+     1px -1px 0 #927da1,
+    -1px  1px 0 #927da1,
+     1px  1px 0 #927da1;
+  font-size: 80px;
+  font-family: Oswald;
+  text-transform: uppercase;
+  
+  transition: all 200ms ease-in-out;
+}
+
+.wrapper:hover img {
+  transform: scale(2);
+  /*object-position: bottom;*/
+}
+
+.wrapper:hover h1 {
+  bottom: 300px;
+  transform: scale(.7);
+}
+
+.wrapper:hover .image-wrapper {
+  width: 800px;
+}
 
 /*
 https://codepen.io/enbee81/pen/wvdMJGp
 https://codepen.io/fabianmichael/pen/yLPyRry
-https://codepen.io/mihaeltomic/pen/vmwMdm*/
+https://codepen.io/mihaeltomic/pen/vmwMdm
+https://codepen.io/bobbykorec/pen/yLgRwRx*/
