@@ -5,13 +5,13 @@ body {
 }
 
 .content {
-    background-image: linear-gradient(#fffacd, #ffcddb);
+    background-image: linear-gradient(#fffacd, #ffcddb, #cdf4ff);
 }
 
 a {
     color: #f9f3bc;
     text-decoration: none;
-    /*font-weight: bold;*/
+    font-weight: 30;
 }
 
 a:hover{
@@ -48,7 +48,6 @@ a:hover{
     color: #927da1;
     transition: transform 0.2s;
     --box-border--border: linear-gradient(105deg, #f29bb3 0%, #a99abd 100%);
-    /* classic 9-slide-scaling with 2px border 4px rounded corners. change `rx` and `ry` parameters to adjust border-radius */
     --box--border__top-left: url("data:image/svg+xml,<svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='1' y='1' width='18' height='18' rx='4' ry='4' stroke='%23000' stroke-width='2' /></svg>");
     --box--border__top: url("data:image/svg+xml,<svg preserveAspectRatio='none' width='100' height='10' viewBox='0 0 100 10' fill='none' xmlns='http://www.w3.org/2000/svg'><line x1='-1' y1='1' x2='101' y2='1' stroke='%23000' stroke-width='2'/></svg>");
     --box--border__top-right: url("data:image/svg+xml,<svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='-9' y='1' width='18' height='18' rx='4' ry='4' stroke='black' stroke-width='2' /></svg>");
@@ -207,21 +206,6 @@ p + p {
     background-position: 100% center;
 }
 
-
-.flex-container {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-
-.flex-container2 {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
-    flex-direction: row;
-}
-
 .links {
     display: flex;
     gap: 1rem;
@@ -236,87 +220,91 @@ ul {
 }
 
 .project-container {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .wrapper {
-  position: relative;
-  height: 300px;
-  width: 600px;
-  margin: 30px 0;
-  
-  display: flex;
-  flex-direction: row;
-  
-  transition: all 200ms ease-in-out;
+    position: relative;
+    height: 300px;
+    width: 600px;
+    margin: 30px 0;
+
+    display: flex;
+    flex-direction: row;
+
+    transition: all 200ms ease-in-out;
 }
 
 .image-wrapper {
-  height: 300px;
-  overflow: hidden;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
 }
 
 .wrapper img {
-  max-height: 300px;
-  object-fit: cover;
-  object-position: top;
-  transition: all 200ms ease-in-out;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top;
+    transition: all 200ms ease-in-out;
 }
 
 .book-design-image {
-  object-position: center;
+    object-position: center;
 }
 
 .header-wrapper {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  max-height: 300px;
-  left: 380px;
-  transition: all 200ms ease-in-out;
-  overflow: hidden;
-  
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-height: 300px;
+    left: 380px;
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
 }
 
 h1 {
-  position: relative;
-  bottom: 0;
-  height: 300px;
-  color: #f9f3bc;
-  text-shadow:
+    position: relative;
+    bottom: 0;
+    height: 300px;
+    color: #f9f3bc;
+    text-shadow:
     -1px -1px 0 #927da1,
-     1px -1px 0 #927da1,
+        1px -1px 0 #927da1,
     -1px  1px 0 #927da1,
-     1px  1px 0 #927da1;
-  font-size: 80px;
-  font-family: Oswald;
-  text-transform: uppercase;
-  
-  transition: all 200ms ease-in-out;
+        1px  1px 0 #927da1;
+    font-size: 80px;
+    font-family: Oswald;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
 }
 
 .wrapper:hover img {
-  transform: scale(2);
-  /*object-position: bottom;*/
+    transform: scale(2);
 }
 
 .wrapper:hover h1 {
-  bottom: 300px;
-  transform: scale(.7);
+    bottom: 300px;
+    transform: scale(.7);
 }
 
 .wrapper:hover .image-wrapper {
-  width: 800px;
+    width: 800px;
 }
 
-/*
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e8a8ba;
+    color: white;
+}
+
+/* REFERENCES FOR CSS STYLING:
 https://codepen.io/enbee81/pen/wvdMJGp
 https://codepen.io/fabianmichael/pen/yLPyRry
 https://codepen.io/mihaeltomic/pen/vmwMdm
